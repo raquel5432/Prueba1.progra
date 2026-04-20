@@ -55,7 +55,7 @@ public class EmailAccount {
         for (int i = 0; i < CAPACIDAD; i++) {
             if (inbox[i] != null) {
                 total++;
-                String estado = inbox[i].isLeido() ? "LEÍDO" : "SIN LEER";
+                String estado = inbox[i].isLeido() ? "LEIDO" : "SIN LEER";
                 if (!inbox[i].isLeido()) sinLeer++;
                 System.out.printf("[%d] %s – %s – %s%n",
                         i, inbox[i].getEmisor(), inbox[i].getAsunto(), estado);
@@ -93,5 +93,5 @@ public class EmailAccount {
         }
         System.out.println("Se eliminaron " + eliminados + " correo(s) leído(s).");
     }
-}
+
 }
